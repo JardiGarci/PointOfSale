@@ -62,7 +62,7 @@ Add database integration (SQLite or MySQL)
 
 - Generate PDF reports
 - More robust inventory system with stock alerts
-- Modernize the UI using ttk or customTkinter
+- Modernize the UI using `ttk` or `customTkinter`
 
 ## Author
 Jardi Yulistian García Bustamante
