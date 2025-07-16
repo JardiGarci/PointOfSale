@@ -34,6 +34,7 @@ POS.py
     ├── productos.csv
     ├── ventas.csv
 
+```
 ## Installation
 
 1. Clone this repository:
