@@ -44,8 +44,8 @@ git clone https://github.com/JardiGarci/PointOfSale
 
 2. Run the scripts:
 ```bash
-    python POS.py
-    ```
+python POS.py
+```
 Make sure Python 3 and Tkinter are installed on your system.
 
 ## Screenshots
@@ -60,4 +60,5 @@ Add database integration (SQLite or MySQL)
 
 ## Author
 Jardi Yulistian García Bustamante
+
 Developed as a personal project to strengthen software development skills.
