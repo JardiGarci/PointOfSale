@@ -33,3 +33,36 @@ POS.py
 └── Generated files:
     ├── productos.csv
     ├── ventas.csv
+
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/point-of-sale-python.git
+
+
+bash
+Copiar
+Editar
+git clone https://github.com/yourusername/point-of-sale-python.git
+Run the script:
+
+bash
+Copiar
+Editar
+python POS.py
+Make sure Python 3 and Tkinter are installed on your system.
+
+## Screenshots
+(You can add screenshots of the system in action here)
+
+## Possible Improvements
+Add database integration (SQLite or MySQL)
+
+- Generate PDF reports
+- More robust inventory system with stock alerts
+- Modernize the UI using ttk or customTkinter
+
+## Author
+Jardi Yulistian García Bustamante
+Developed as a personal project to strengthen software development skills.
