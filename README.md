@@ -39,19 +39,11 @@ POS.py
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/point-of-sale-python.git
+   git clone https://github.com/JardiGarci/PointOfSale
 
-
-bash
-Copiar
-Editar
-git clone https://github.com/yourusername/point-of-sale-python.git
-Run the script:
-
-bash
-Copiar
-Editar
-python POS.py
+2.Run the script:
+    ```bash
+    python POS.py
 Make sure Python 3 and Tkinter are installed on your system.
 
 ## Screenshots
