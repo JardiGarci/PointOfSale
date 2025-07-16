@@ -49,7 +49,13 @@ python POS.py
 Make sure Python 3 and Tkinter are installed on your system.
 
 ## Screenshots
-(You can add screenshots of the system in action here)
+<img width="1375" height="798" alt="image" src="https://github.com/user-attachments/assets/0f501f4c-0146-433c-9bb6-a5083f9497af" />
+
+<img width="1375" height="798" alt="image" src="https://github.com/user-attachments/assets/3f466cb3-32c2-46e3-8135-8392bbdb3a09" />
+
+<img width="1375" height="798" alt="image" src="https://github.com/user-attachments/assets/5e98d296-945e-4da6-9d31-d1fc764bebde" />
+
+
 
 ## Possible Improvements
 Add database integration (SQLite or MySQL)
