@@ -1,70 +1,62 @@
-# Point of Sale System (POS) in Python
+# Biomed POS — Punto de Venta en Python
 
-This project is a Point of Sale (POS) system developed in Python with a graphical user interface built using `Tkinter`. It is designed for small and medium-sized businesses that need a simple tool to manage sales, products, users, and reports.
+Sistema de punto de venta de escritorio desarrollado en Python con Tkinter, orientado a negocios de artículos ortopédicos y de rehabilitación. Usa SQLite como motor de base de datos y genera tickets en PDF.
 
-## Features
+## Características
 
-- 🎯 **Product management**: Add, search, and modify products.
-- 💰 **Sales recording**: Automatically calculates totals and saves sales details to file.
-- 👥 **User control**: Different access levels (Admin and Salesperson).
-- 📄 **Reports**: Inventory and sales reports (accessible only to admins).
-- 💾 **Data persistence**: Products and sales are saved locally in CSV files.
-- 🧩 **Intuitive interface**: Built with `Tkinter` for ease of use.
+- **Caja** — registro de ventas, métodos de pago (efectivo / tarjeta), cálculo automático de cambio e IVA
+- **Inventario** — alta, baja y edición de productos con SKU, categoría, marca, talla/color, costo y precio
+- **Recepciones** — entrada de mercancía con actualización automática de stock
+- **Pedidos** — órdenes de compra a proveedores
+- **Rentas** — módulo de préstamo/renta de equipo ortopédico con seguimiento de devoluciones
+- **Clientes** — directorio con historial de compras y niveles de precio
+- **Empleados y Checador** — registro de personal y control de asistencia
+- **Cortes y Reportes** — cortes semanales/mensuales, desglose de ventas y gastos, totales netos
+- **Análisis** — gráficas de ventas por período generadas con Matplotlib
+- **Tickets PDF** — ticket de venta generado automáticamente con fpdf2
+- **Multi-usuario** — acceso por PIN con niveles (CEO / Gerente / Vendedor)
 
-## Technologies Used
+## Tecnologías
 
-- Python 3
-- Tkinter (GUI)
-- `csv` module for file-based data storage
-- Object-Oriented Programming principles
+| Componente | Herramienta |
+|---|---|
+| GUI | Python 3 + Tkinter / ttk |
+| Base de datos | SQLite 3 |
+| Gráficas | Matplotlib |
+| Tickets | fpdf2 |
+| Imágenes | Pillow |
 
-## System Structure
-
-```text
-POS.py
-├── Product class
-├── Sale class
-├── User class
-├── PuntoVentaApp class (main window)
-│   ├── Login screen
-│   ├── Main menu
-│   ├── Management windows (products, sales, reports)
-│   └── Access control system
-└── Generated files:
-    ├── productos.csv
-    ├── ventas.csv
+## Estructura del proyecto
 
 ```
-## Installation
-
-1. Clone this repository:
-```bash
-git clone https://github.com/JardiGarci/PointOfSale
+POS/
+├── POS.py              # Aplicación principal
+├── DATA/
+│   ├── biomed.db       # Base de datos SQLite  ← no incluida en el repo
+│   └── icon_search.png
+├── Logo_azul.png
+└── Logo_blanco.png
 ```
 
-2. Run the scripts:
+> Los archivos `DATA/biomed.db`, logs y tickets PDF no se suben al repositorio (ver `.gitignore`).
+
+## Instalación
+
 ```bash
+# Clonar el repositorio
+git clone https://github.com/JardiGarci/PointOfSale.git
+cd PointOfSale
+
+# Instalar dependencias
+pip install fpdf2 matplotlib pillow
+
+# Ejecutar
 python POS.py
 ```
-Make sure Python 3 and Tkinter are installed on your system.
 
-## Screenshots
-<img width="1375" height="798" alt="image" src="https://github.com/user-attachments/assets/0f501f4c-0146-433c-9bb6-a5083f9497af" />
+La base de datos se crea automáticamente en `DATA/biomed.db` al primer arranque.
 
-<img width="1375" height="798" alt="image" src="https://github.com/user-attachments/assets/3f466cb3-32c2-46e3-8135-8392bbdb3a09" />
+## Autor
 
-<img width="1375" height="798" alt="image" src="https://github.com/user-attachments/assets/5e98d296-945e-4da6-9d31-d1fc764bebde" />
-
-
-
-## Possible Improvements
-Add database integration (SQLite or MySQL)
-
-- Generate PDF reports
-- More robust inventory system with stock alerts
-- Modernize the UI using `ttk` or `customTkinter`
-
-## Author
-Jardi Yulistian García Bustamante
-
-Developed as a personal project to strengthen software development skills.
+Jardi García — Ingeniería Biónica | Maestría en Sistemas Complejos  
+[LinkedIn](https://www.linkedin.com/in/jardigarcia/)

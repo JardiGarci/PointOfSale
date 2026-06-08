@@ -1,0 +1,39 @@
+# Base de datos (contiene datos reales del negocio)
+DATA/biomed.db
+DATA/*.db
+DATA/*.dbbak
+DATA/*.bak
+
+# Archivos de conflicto (sync Dropbox/iCloud)
+DATA/conflict_archives/
+
+# Datos legados numpy
+DATA/*.npz
+
+# Logs
+DATA/*.log
+DATA/*.txt
+
+# Tickets PDF generados
+tickets/
+
+# Backups de código
+*.backup_*.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos temporales del editor
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
